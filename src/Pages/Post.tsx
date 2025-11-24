@@ -1,6 +1,6 @@
 import { useEffect, useState, type ChangeEvent, type FormEvent } from "react"
 import { getAllPost } from "../Services/post"
-import { savePost } from "../Services/post"
+// import { savePost } from "../Services/post"
 
 export default function Post() {
 
@@ -49,7 +49,7 @@ export default function Post() {
         formData.append("tags", tags)
         if (image) formData.append("image", image)
 
-        const res = await savePost(formData)
+        // const res = await savePost(formData)
 
         // Clear form
         setTitle("")
