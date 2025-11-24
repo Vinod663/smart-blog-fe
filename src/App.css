@@ -1,0 +1,27 @@
+:root{
+	--bg:#fff;
+	--muted:#666;
+	--accent:#0366d6;
+	--card:#f8f9fb;
+}
+
+body{font-family:Inter,Segoe UI,Roboto,Arial,Helvetica,sans-serif;background:var(--bg);color:#111;margin:0}
+
+.page{padding:24px}
+.page__header{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
+.page__actions a{margin-left:12px;color:var(--accent);text-decoration:none}
+
+.posts{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.post{background:var(--card);padding:12px;border-radius:8px;border:1px solid rgba(0,0,0,0.04)}
+.post__title{margin:0 0 8px 0}
+.post__excerpt{margin:0 0 12px 0;color:var(--muted)}
+.post__meta{font-size:12px;color:var(--muted)}
+
+.page--auth .form{max-width:420px}
+.form__error{color:#b00020;margin-bottom:8px}
+.form__row{display:flex;flex-direction:column;margin-bottom:12px}
+.form__row span{margin-bottom:6px}
+.form__actions{display:flex;gap:12px;align-items:center}
+.link{margin-left:12px;color:var(--accent);text-decoration:none}
+
+.back-link{margin-top:18px}
