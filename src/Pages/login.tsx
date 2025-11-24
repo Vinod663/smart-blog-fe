@@ -1,6 +1,5 @@
-import React, { useState, type FormEvent } from 'react'
+import { useState, type FormEvent } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import register from './register'
 import { getMyDetails, login } from '../Services/auth'
 import axios from 'axios'
 import { useAuth } from '../Context/authContext'
@@ -13,7 +12,7 @@ export default function Login() {
 
  
 
-const {user, setUser} = useAuth();
+const { setUser} = useAuth();
 
 const [email, setEmail] = useState('')
 const [password, setPassword] = useState('')

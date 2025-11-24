@@ -3,7 +3,7 @@
 //api.ts
 // This file contains the API service functions for user registration and other API calls.
 
-import axios, { Axios, AxiosError } from 'axios';
+import axios, { AxiosError } from 'axios';
 import { refreshTokens } from './auth';
 
 const api = axios.create({
