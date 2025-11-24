@@ -7,7 +7,7 @@ import axios, { Axios, AxiosError } from 'axios';
 import { refreshTokens } from './auth';
 
 const api = axios.create({
-  baseURL: 'http://localhost:3000/api/v1', // Base URL for the backend API
+  baseURL: 'https://smart-blog-be-wine.vercel.app/api/v1', // Base URL for the backend API--'http://localhost:3000/api/v1'
   headers: {
     'Content-Type': 'application/json',
   },
